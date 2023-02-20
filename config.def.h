@@ -6,8 +6,8 @@ static const unsigned int gappx     = 5;        /* gap size between windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "monospace:size=12",  "FontAwesome5Brands:size=12:antialias:true", "FontAwesome5Free:size=12:antialias:true", "FontAwesome5Free:style=Solid:size=12:antialias:true" };
-static const char dmenufont[]       = "monospace:size=12";
+static const char *fonts[]          = { "monospace:size=13",  "FontAwesome5Brands:size=13:antialias:true", "FontAwesome5Free:size=13:antialias:true", "FontAwesome5Free:style=Solid:size=13:antialias:true" };
+static const char dmenufont[]       = "monospace:size=13";
 static const char col_gray1[]       = "#222222"; /* background color */
 static const char col_gray2[]       = "#444444"; /* inactive window border color */
 static const char col_gray3[]       = "#bbbbbb"; /* font color */
@@ -20,7 +20,7 @@ static const char *colors[][3]      = {
 };
 
 /* tagging */
-static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
+static const char *tags[] = { "\uF26A", "\uF120", "\uF121", "\uF392", "5", "6", "7", "8", "9" };
 
 static const Rule rules[] = {
 	/* xprop(1):
