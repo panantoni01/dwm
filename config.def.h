@@ -115,10 +115,10 @@ static const Key keys[] = {
 	{ 0,                       		XK_F3,     spawn,          {.v = upvol   } },
     { 0,                       		XK_F2,     spawn,          {.v = downvol } },
     { 0,                       		XK_F1,     spawn,          {.v = mutevol } },
-	{ ControlMask,                  XK_w,      spawn,          {.v = browsercmd } },
-	{ ControlMask,                  XK_v,      spawn,          {.v = vscodecmd } },
-	{ ControlMask,                  XK_t,      spawn,          {.v = termcmd } },
-	{ ControlMask,                  XK_d,      spawn,          {.v = discordcmd } },
+	{ MODKEY|ControlMask,           XK_w,      spawn,          {.v = browsercmd } },
+	{ MODKEY|ControlMask,           XK_v,      spawn,          {.v = vscodecmd } },
+	{ MODKEY|ControlMask,           XK_t,      spawn,          {.v = termcmd } },
+	{ MODKEY|ControlMask,           XK_d,      spawn,          {.v = discordcmd } },
 };
 
 /* button definitions */
