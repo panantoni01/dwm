@@ -13,12 +13,19 @@ static const char col_gray2[]       = "#444444"; /* inactive window border color
 static const char col_gray3[]       = "#bbbbbb"; /* font color */
 static const char col_gray4[]       = "#eeeeee"; /* current tag and current window font color */
 static const char col_cyan[]        = "#005577";
-static const char *colors[][3]      = {
-	/*               fg         bg         border   */
-	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
-	[SchemeSel]  = { col_gray4, col_cyan,  col_cyan  },
-};
+static const char col_black[]       = "#000000";
+static const char col_red[]         = "#ff0000";
+static const char col_yellow[]      = "#ffff00";
+static const char col_white[]       = "#ffffff";
 
+static const char *colors[][3]      = {
+	/*					fg         bg          border   */
+	[SchemeNorm] =	 { col_gray3, col_gray1,  col_gray2 },
+	[SchemeSel]  =	 { col_gray4, col_cyan,   col_cyan },
+	[SchemeWarn] =	 { col_black, col_yellow, col_red },
+	[SchemeUrgent]=	 { col_white, col_red,    col_red },
+};
+ 
 /* tagging */
 static const char *tags[] = { "\uF26A", "\uF120", "\uF121", "\uF392", "5", "6", "7", "8", "9" };
 
