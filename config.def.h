@@ -71,10 +71,10 @@ static const char *browsercmd[]  = { "opera", NULL };
 static const char *vscodecmd[]   = { "code", "--disable-gpu", NULL };
 static const char *discordcmd[]  = { "discord", NULL };
 
-/* commands */
-static const char *upvol[] = { "amixer", "set", "Master", "2+", NULL };
-static const char *downvol[] = { "amixer", "set", "Master", "2-", NULL };
-static const char *mutevol[] = { "amixer", "-q", "set", "Master", "toggle", NULL };
+/* sound commands */
+static const char *upvol[]   = { "/usr/bin/pactl", "set-sink-volume", "0", "+4%",     NULL };
+static const char *downvol[] = { "/usr/bin/pactl", "set-sink-volume", "0", "-4%",     NULL };
+static const char *mutevol[] = { "/usr/bin/pactl", "set-sink-mute",   "0", "toggle",  NULL };
 
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
