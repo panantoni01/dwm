@@ -76,7 +76,7 @@ static const char *termcmd[]     = { "st", "-A", alpha, "-f", termfont,  NULL };
 static const char *browsercmd[]  = { "opera", NULL };
 static const char *vscodecmd[]   = { "code", "--disable-gpu", NULL };
 static const char *discordcmd[]  = { "discord", NULL };
-static const char *lfcmd[]       = { "st", "-A", alpha, "-f", termfont, "-e", "lf", NULL };
+static const char *lfcmd[]       = { "st", "-A", alpha, "-f", termfont, "-e", "lf-ueberzug", NULL };
 
 /* sound commands */
 static const char *upvol[]   = { "/usr/bin/pactl", "set-sink-volume", "0", "+4%",     NULL };
