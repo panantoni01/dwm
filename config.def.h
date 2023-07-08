@@ -31,7 +31,7 @@ static const char *colors[][3]      = {
 };
  
 /* tagging */
-static const char *tags[] = { "\uF26A", "\uF120", "\uF121", "LF", "\uF392", "\uF1C1",  "7", "8", "9" };
+static const char *tags[] = { "\uF26A", "\uF120", "\uF120", "\uF121", "LF", "\uF392", "\uF1C1", "8", "9" };
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -77,6 +77,7 @@ static const char *browsercmd[]  = { "opera", NULL };
 static const char *vscodecmd[]   = { "code", "--disable-gpu", NULL };
 static const char *discordcmd[]  = { "discord", NULL };
 static const char *lfcmd[]       = { "st", "-A", alpha, "-f", termfont, "-e", "lf-ueberzug", NULL };
+static const char *sscmd[]       = { "flameshot", "gui", NULL };
 
 /* sound commands */
 static const char *upvol[]   = { "/usr/bin/pactl", "set-sink-volume", "0", "+4%",     NULL };
@@ -127,6 +128,7 @@ static const Key keys[] = {
 	{ MODKEY|ControlMask,           XK_t,      spawn,          {.v = termcmd } },
 	{ MODKEY|ControlMask,           XK_d,      spawn,          {.v = discordcmd } },
     { MODKEY|ControlMask,           XK_f,      spawn,          {.v = lfcmd } },
+	{ 0,                            XK_Print,  spawn,          {.v = sscmd } },
 };
 
 /* button definitions */
