@@ -31,7 +31,7 @@ static const char *colors[][3]      = {
 };
  
 /* tagging */
-static const char *tags[] = { "\uF26A", "\uF120", "\uF120", "\uF121", "LF", "\uF392", "\uF1C1", "8", "9" };
+static const char *tags[] = { "\uF269", "\uF120", "\uF120", "\uF121", "LF", "\uF392", "\uF1C1", "8", "9" };
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -73,7 +73,7 @@ static const Layout layouts[] = {
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[]    = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
 static const char *termcmd[]     = { "st", "-A", alpha, "-f", termfont,  NULL };
-static const char *browsercmd[]  = { "opera", NULL };
+static const char *browsercmd[]  = { "firefox-bin", NULL };
 static const char *vscodecmd[]   = { "code", "--disable-gpu", NULL };
 static const char *discordcmd[]  = { "discord", NULL };
 static const char *lfcmd[]       = { "st", "-A", alpha, "-f", termfont, "-e", "lf-ueberzug", NULL };
