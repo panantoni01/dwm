@@ -84,6 +84,10 @@ static const char *upvol[]   = { "/usr/bin/pactl", "set-sink-volume", "0", "+4%"
 static const char *downvol[] = { "/usr/bin/pactl", "set-sink-volume", "0", "-4%",     NULL };
 static const char *mutevol[] = { "/usr/bin/pactl", "set-sink-mute",   "0", "toggle",  NULL };
 
+/* screen brightness commands */
+static const char *upbright[]   = { "xbacklight", "+5", NULL };
+static const char *downbright[] = { "xbacklight", "-5", NULL };
+
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
@@ -123,6 +127,8 @@ static const Key keys[] = {
 	{ 0,                       		XK_F3,     spawn,          {.v = upvol   } },
     { 0,                       		XK_F2,     spawn,          {.v = downvol } },
     { 0,                       		XK_F1,     spawn,          {.v = mutevol } },
+	{ 0,                       		XK_F5,     spawn,          {.v = upbright } },
+	{ 0,                       		XK_F4,     spawn,          {.v = downbright } },
 	{ MODKEY|ControlMask,           XK_w,      spawn,          {.v = browsercmd } },
 	{ MODKEY|ControlMask,           XK_v,      spawn,          {.v = vscodecmd } },
 	{ MODKEY|ControlMask,           XK_t,      spawn,          {.v = termcmd } },
